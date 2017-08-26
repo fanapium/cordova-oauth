@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Cordova Oauth</title>
+</head>
+<body dir="rtl">
+<div id="shade">
+</div>
+<div class="actionbar">
+</div>
+<div class="app welcome">
+    <h1>اطلاعات کاربر</h1>
+    <h1 class="loading">Loading... </h1>
+    <div class="userinfo">
+        <ul>
+            <li>
+                <b>نام کاربری: </b><br>
+                <span id="username"></span>
+            </li>
+            <li>
+                <b>ایمیل: </b><br>
+                <span id="email"></span>
+            </li>
+            <li>
+                <b>شماره موبایل: </b><br>
+                <span id="phone_number"></span>
+            </li>
+
+        </ul>
+    </div>
+    <button class="btn" id="back-btn"><span>بازگشت</span></button>
+    <div class="footer">
+        نمونه پیاده سازی شده sso با cordova
+    </div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/userinfo.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+</html>
